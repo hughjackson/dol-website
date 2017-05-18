@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Dance Out Loud</title>
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Raleway|Dancing+Script" rel="stylesheet">
 <style>
+@font-face {
+    font-family: playlist-caps;
+    src: url("fonts/Playlist Caps.otf") format("opentype");
+}
+@font-face {
+    font-family: playlist-script;
+    src: url("fonts/Playlist Script.otf") format("opentype");
+}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
     height: 100%;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 /* Full height image header */
 .bgimg-1 {
     background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
     background-image: url("https://static.wixstatic.com/media/b80d9e_9693ef49f1bd4b43b9bcf6d73e64f180~mv2.jpg/v1/fill/w_1286,h_382,al_c,q_85,usm_0.66_1.00_0.01/b80d9e_9693ef49f1bd4b43b9bcf6d73e64f180~mv2.webp");
-    min-height: 380px;
-}.bgimg-2 {
+    min-height: 100%;
+}
+.bgimg-class-1, .bgimg-class-2, .bgimg-class-3 {
     background-size: cover;
     background-position:center;
-    background-image: url("https://static.wixstatic.com/media/b80d9e_27fbcf98bf5440cca05e4a900dcbab3e~mv2.jpg/v1/fill/w_280,h_208,al_c,q_80,usm_0.66_1.00_0.01/b80d9e_27fbcf98bf5440cca05e4a900dcbab3e~mv2.webp");
+    height:300px;
+}
+.bgimg-class-1 {
+    background-image: url("https://static.wixstatic.com/media/b80d9e_c566cbe19ee3473995242da5949dd338~mv2.jpg/v1/fill/w_515,h_873,al_c,q_85,usm_0.66_1.00_0.01/b80d9e_c566cbe19ee3473995242da5949dd338~mv2.webp");
+}
+.bgimg-class-2 {
+    background-image: url("https://static.wixstatic.com/media/b80d9e_51b96b18b72b46eb96c7c5cac28d2f44~mv2.jpg/v1/fill/w_515,h_846,al_c,q_85,usm_0.66_1.00_0.01/b80d9e_51b96b18b72b46eb96c7c5cac28d2f44~mv2.webp");
+}
+.bgimg-class-3 {
+    background-image: url("https://static.wixstatic.com/media/b80d9e_2a19bfed261545c29d3150f52e080df0~mv2.jpg/v1/fill/w_1286,h_351,al_r,q_85,usm_0.66_1.00_0.01/b80d9e_2a19bfed261545c29d3150f52e080df0~mv2.webp");
 }
 .w3-bar .w3-button {
     padding: 16px;
 }
-.dol-font-bold {font-family:fredericka the great,fantasy; line-height:110%}
-.dol-font-chunky {font-family:raleway,fantasy; line-height:110%}
-.dol-font-cursive {font-family:dancing script,fantasy; line-height:110%}
-.dol-pink{background-color:#ffa8be; color:#fff!important;}
-.dol-text-pink{color:#ffa8be}
+
+.strip-centre{max-width:1200px; margin:0 auto}
+.strip-centre-small{max-width:600px; margin:0 auto}
+.anchor{
+    display: block;
+    position: relative;
+    top: -95px;
+    visibility: hidden;
+    }
+
+.class{display:none}
+
+.w3-hover-opacity-none:hover {opacity: 1!important}
+.font-bold {font-family:playlist-caps,fantasy; line-height:110%}
+.font-chunky {font-family:raleway,fantasy; line-height:110%}
+.font-cursive {font-family:playlist-script,fantasy; line-height:110%}
+.color-1, .color-hover-1:hover {background-color:#ffa8be!important; color:#ffffff!important;}
+.color-text-1, .color-text-hover-1:hover {color:#ffa8be!important;}
+.color-2, .color-hover-2:hover {background-color:#9ec6df !important; color:#000000!important;}
+.color-text-2, .color-text-hover-2:hover {color:#9ec6df !important;}
+.color-3, .color-hover-3:hover {background-color:#757575!important; color:#ffffff!important;}
+.color-text-3, .color-text-hover-3:hover {color:#757575!important;}
 </style>
 
 
-<body style="margin-top:79px">
+<body style="margin-top:95px">
 
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-wide">
-    	<img src='https://static.wixstatic.com/media/b80d9e_3f72e2f92dae450dbd713c2f8fa0bbb3~mv2.png/v1/crop/x_0,y_12,w_533,h_162/fill/w_261,h_79,al_c,usm_0.66_1.00_0.01/b80d9e_3f72e2f92dae450dbd713c2f8fa0bbb3~mv2.png' style='height:100%'/>
-    </a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-display-right w3-hide-small">
-      <a href="/" class="w3-bar-item w3-button">Home</a>
-      <a href="/about" class="w3-bar-item w3-button">About</a>
-      <a href="/classes" class="w3-bar-item w3-button">Class</a>
-      <a href="/join" class="w3-bar-item w3-button">Join</a>
-      <a href="/locatons" class="w3-bar-item w3-button">Locations</a>
-      <a href="/blog" class="w3-bar-item w3-button">Blog</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+<div class="w3-top w3-card-2 w3-white">
+  <div class="w3-bar strip-centre w3-display-container" id="myNavbar">
+    <div >
+      <a href="#home" class="w3-bar-item w3-wide">
+        <img src='https://static.wixstatic.com/media/b80d9e_3f72e2f92dae450dbd713c2f8fa0bbb3~mv2.png/v1/crop/x_0,y_12,w_533,h_162/fill/w_261,h_79,al_c,usm_0.66_1.00_0.01/b80d9e_3f72e2f92dae450dbd713c2f8fa0bbb3~mv2.png' style='height:100%'/>
+      </a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-display-right w3-hide-small">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">About</a>
+        <a href="#classes" class="w3-bar-item w3-button">Classes</a>
+        <a href="#terms" class="w3-bar-item w3-button">Term Times</a>
+        <a href="#locations" class="w3-bar-item w3-button">Locations</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
-    </a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -70,15 +111,18 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-right w3-padding-xxlarge w3-text-white w3-center w3-margin-right" style="height:80%">
-    <span class="w3-jumbo w3-text-black dol-font-bold w3-left">
-    	<span class="w3-text-black">Experience</span><br>
-    	<span class="w3-text-light-blue">the</span>
-    	<span class="w3-text-pink">Magic...</span>
-    </span><br>
-    <span class="w3-display-bottommiddle"><a href="/join" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Join us for a class</a></span>
-  </div> 
+<a class="anchor" id="home"></a>
+<header class="bgimg-1 w3-display-container w3-grayscale-min">
+  <div class="w3-display-middle">
+    <div class="w3-padding-jumbo w3-text-white w3-center" style="height:80%">
+      <span class="w3-jumbo w3-text-black font-bold ">
+        <span class="w3-text-black">Experience</span><br>
+        <span class="color-text-3">the</span>
+        <span class="color-text-1">Magic...</span>
+      </span><br>
+      <span class=""><a href="#classes" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Join us for a class</a></span>
+    </div> 
+  </div>
   <div class="w3-display-bottomleft w3-padding-xxlarge w3-text-grey w3-large">
     <a href="#" class="w3-hover-text-white"><i class="fa fa-facebook-official"></i></a>
     <a href="#" class="w3-hover-text-white"><i class="fa fa-flickr"></i></a>
@@ -86,106 +130,522 @@ body, html {
     <a href="#" class="w3-hover-text-white"><i class="fa fa-twitter"></i></a>
     <a href="#" class="w3-hover-text-white"><i class="fa fa-linkedin"></i></a>
   </div>
+  
+  <a class="w3-container w3-display-bottommiddle w3-text-grey w3-xxlarge w3-center" 
+      style="text-decoration: none; margin-bottom:100px" href="#about">V</a>
 </header>
 
-<!-- Special Offer -->
-<div class="w3-container w3-padding-16 dol-pink">
-  <div class="w3-twothird">
-  	<h3 class="w3-center dol-font-cursive w3-jumbo">Look... a special offer!</h3>
-    <span class="w3-center w3-text-black w3-large">
-      <p class="w3-padding-xxlarge">Watch your child dance, sing and grow in our beautiful classes with the use of gorgeous props and set to music that inspires the imagination</p>
-      <p>For a very limited time, we are offering a special gift to any little one who loves to dance:</p>
-      <p>An UNLIMITED 14 day trial pass at no cost to you!</p>
-    </span>
-  </div>
-  <div class="w3-third">
-  	<div class="w3-card-8 w3-center w3-round bgimg-2">
-      <a href='/trial'>
-        <div class="w3-padding-xxlarge">
-          <p class="w3-padding-xxlarge w3-white w3-xlarge" style="opacity:0.5">GET YOUR FREE 14 DAY TRIAL PASS HERE</p>
+<!-- about section -->
+<a class="anchor" id="about" style="top:-190px"></a>
+<div class="w3-display-container" style="margin-top:-85px">
+  <img class="w3-circle w3-display-topmiddle" src="https://static.wixstatic.com/media/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.jpg/v1/fill/w_189,h_195,al_c,q_80,usm_0.66_1.00_0.01/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.webp"></img>
+  <div style="padding-top:85px"></div>
+  <div class="w3-row w3-center color-1">
+      <div class="w3-half color-1">
+        <h2 class="w3-xxlarge font-cursive w3-padding-xxlarge">About Haylee</h2>
+        <div class="w3-padding-jumbo">
+          <p>Haylee has been dancing since she was 4</p>
+          <p>With a host of different styles, from ballet and jazz to ice dancing she has the knowledge to help your little dancers shine!</p>
+          <p>Haylee is also a qualified medical doctor, so she can help in al of your child's developement as dancing is more than just about having great fun, it's about growing into wonderful people too.</p>
         </div>
-      </a>
+      </div>
+      <div class="w3-half color-2">
+        <h2 class="w3-xxlarge font-cursive w3-padding-xxlarge">Dance Out <span class="color-text-1">Loud</span></h2>
+        <div class="w3-padding-jumbo">
+          <p>Welcome!</p>
+          <p>Dance Out Loud is a precious boutique dance school just for our youngest dancers that I created after years of hard work studying and teaching dance to both children and adults. I wanted to create a magical, creative place where little ones could experience the joy of twirling and jumping across the floor, just as I remember from when I was a child.</p>
+          <p>My own mother tears up thinking back to the days when her little dancer used to practice her wobbly pique steps down the hallway, and she still owns the very first pair of tiny ballet shoes that I refused to take off all those years ago (I even slept in them!)</p>
+          <p>I hope Dance Out Loud creates beautiful memories for you and your children.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- classes section -->
+<a class="anchor" id="classes"></a>
+<div class="color-3 w3-padding-16">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo">Classes</h2>
+    <div class="strip-centre-small">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet urna at libero consequat, ac porttitor dui venenatis. Donec faucibus quam et purus facilisis imperdiet a a velit. Maecenas eget erat et elit luctus auctor. Phasellus tincidunt ex id tellus egestas gravida. Suspendisse rutrum ultrices pulvinar. Aenean ipsum odio, suscipit ut pharetra id, volutpat quis mi.</p>
+    </div>
+  </div>
+  
+  <a class="anchor" id="class"></a>
+  <div class="w3-row-padding">
+    <div class="w3-third w3-padding-8">
+      <div class="bgimg-class-1 w3-card-2 w3-round-large w3-center">
+        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
+          <span class="w3-xlarge font-chunky">
+            Dance With Me<br>
+            1.5 - 3yrs
+          </span>
+          <p class="w3-padding-large">A fun, interactive class for our youngest dancers</p>
+          <a href="#class" onClick="openClass('class1')" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-padding-8">
+      <div class="bgimg-class-2 w3-card-2 w3-round-large w3-center">
+        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
+          <span class="w3-xlarge font-chunky">
+            Fairy Ballet<br>
+            3 - 5yrs
+          </span>
+          <p class="w3-padding-large">Fairies fly and create wonderful dance magic!</p>
+          <a href="#class" onClick="openClass('class2')" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-padding-8">
+      <div class="bgimg-class-3 w3-card-2 w3-round-large w3-center">
+        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
+          <span class="w3-xlarge font-chunky">
+            Tutu Ballet<br>
+            5 - 7yrs
+          </span>
+          <p class="w3-padding-large">Leap and twirl with abandon like a real ballerina!</p>
+          <a href="#class" onClick="openClass('class3')" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Classes Section -->
-<div class="w3-container w3-padding-0">
-  <div class="w3-row w3-center">
-    <div class="w3-third w3-dark-grey w3-padding-16">
-      <i class="fa fa-heart dol-text-pink w3-margin-bottom w3-jumbo"></i><br>
-      <span class="w3-xlarge dol-font-chunky">
-      	Dance With Me<br>
-        18mth-3yrs
-      </span>
-      <p class="w3-padding-large">A fun, interactive class for our youngest dancers</p>
-      <a href="/classes/dancewithme" class="w3-button w3-border w3-dark-grey w3-hover-grey w3-padding-large w3-margin-top">Learn More</a>
+<!-- individual class section -->
+<div class="color-3 w3-padding-16 class" id="class1">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo">Dance With Me</h2>
+    <div class="strip-centre-small">
+      Experiencing joy and laughter as you dance together in this special class. Specially created for developing minds and bodies we explore valuable building blocks to set the stage for a lifetime of activity.
     </div>
-    
-    <div class="w3-third w3-white w3-padding-16">
-      <i class="fa fa-star w3-text-grey w3-margin-bottom w3-jumbo"></i><br>
-      <span class="w3-xlarge dol-font-chunky w3-text-pink">
-      	Fairy Ballet<br>
-        3 - 5yrs
-      </span>
-      <p class="w3-padding-large">Fairies fly and create wonderful dance magic!</p>
-      <a href="/classes/dancewithme" class="w3-button w3-border w3-white w3-hover-grey w3-hover-border w3-padding-large w3-margin-top">Learn More</a>
-    </div>
-    
-    <div class="w3-third w3-light-blue w3-padding-16">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i><br>
-      <span class="w3-xlarge dol-font-chunky w3-text-white">
-      	Tutu Ballet<br>
-        5 - 7yrs
-      </span>
-      <p class="w3-padding-large">Leap and twirl with abandon like a real ballerina!</p>
-      <a href="/classes/dancewithme" class="w3-button w3-border w3-border-white w3-light-blue w3-hover-grey w3-padding-large w3-margin-top">Learn More</a>
+
+    <!-- timetable -->
+    <div class="w3-row w3-margin-top">
+      <!-- Location column -->
+      <div class="w3-half w3-padding">
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">Southampton CBD</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">West End</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">Woolston</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1' id="l1t2" onclick="timeClick('l1t2')">9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+      <div class="w3-half w3-padding-jumbo">
+        <div class="w3-card-2 color-1 w3-round w3-padding-large w3-left-align" style="width:450px; margin-top:60px">
+          <h2 class="w3-xxlarge font-cursive">Overview</h2>
+          <table>
+            <tr><th>Ages</th><td>18 months to 3 years old</td></tr>
+            <tr><th>Duration</th><td>Each class is 30 minutes long</td></tr>
+            <tr><th>Fees</th><td>7.50 per class (whole terms only)</td></tr>
+          </table>
+          <br>
+          <h2 class="w3-xxlarge font-cursive">What to Bring</h2>
+          <ul><li>A bottle of water,</li><li>a healthy snack for after class,</li><li>and your biggest smiles!</li></ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Note from Miss Haylee -->
-<div class="w3-container w3-light-grey w3-center">
-	<div class="w3-card-8 w3-white w3-round w3-center w3-padding-large w3-margin-top w3-margin-bottom" style="max-width:800px; margin:0 auto">
-    	<img class="w3-circle" src="https://static.wixstatic.com/media/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.jpg/v1/fill/w_189,h_195,al_c,q_80,usm_0.66_1.00_0.01/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.webp"></img>
-        <h3 class="dol-font-bold w3-text-pink w3-xxlarge">A note from Miss Haylee</h3>
-        <p>Welcome!</p>
-        <p>Dance Out Loud is a precious boutique dance school just for our youngest dancers that I created after years of hard work studying and teaching dance to both children and adults. I wanted to create a magical, creative place where little ones could experience the joy of twirling and jumping across the floor, just as I remember from when I was a child.</p>
-        <p>My own mother tears up thinking back to the days when her little dancer used to practice her wobbly pique steps down the hallway, and she still owns the very first pair of tiny ballet shoes that I refused to take off all those years ago (I even slept in them!)</p>
-        <p>I hope Dance Out Loud creates beautiful memories for you and your children.</p><br>
-        <p>Haylee Solomons B. Med, M.D</p>
+<div class="color-3 w3-padding-16 class" id="class2">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo">Fairy Ballet</h2>
+    <div class="strip-centre-small">
+      Experiencing joy and laughter as you dance together in this special class. Specially created for developing minds and bodies we explore valuable building blocks to set the stage for a lifetime of activity.
     </div>
+
+    <!-- timetable -->
+    <div class="w3-row w3-margin-top">
+      <!-- Location column -->
+      <div class="w3-half w3-padding">
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">Southampton CBD</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">West End</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">Woolston</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1' id="l1t2" onclick="timeClick('l1t2')">9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+      <div class="w3-half w3-padding-jumbo">
+        <div class="w3-card-2 color-1 w3-round w3-padding-large w3-left-align" style="width:450px; margin-top:60px">
+          <h2 class="w3-xxlarge font-cursive">Overview</h2>
+          <table>
+            <tr><th>Ages</th><td>3 to 5 years old</td></tr>
+            <tr><th>Duration</th><td>Each class is 30 minutes long</td></tr>
+            <tr><th>Fees</th><td>7.50 per class (whole terms only)</td></tr>
+          </table>
+          <br>
+          <h2 class="w3-xxlarge font-cursive">What to Bring</h2>
+          <ul><li>A bottle of water,</li><li>a healthy snack for after class,</li><li>and your biggest smiles!</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="color-3 w3-padding-16 class" id="class3">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo">Tutu Ballet</h2>
+    <div class="strip-centre-small">
+      Experiencing joy and laughter as you dance together in this special class. Specially created for developing minds and bodies we explore valuable building blocks to set the stage for a lifetime of activity.
+    </div>
+
+    <!-- timetable -->
+    <div class="w3-row w3-margin-top">
+      <!-- Location column -->
+      <div class="w3-half w3-padding">
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">Southampton CBD</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">West End</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+
+          <div class="w3-container w3-margin-bottom">
+              <h2 class="w3-xxlarge font-cursive">Woolston</h2>
+              <table class="w3-table w3-centered" style="width:100%">
+                  <tr>
+                      <th style="width:14%">Mon</th>
+                      <th style="width:14%">Tue</th>
+                      <th style="width:14%">Wed</th>
+                      <th style="width:14%">Thu</th>
+                      <th style="width:14%">Fri</th>
+                      <th style="width:14%">Sat</th>
+                      <th style="width:14%">Sun</th>
+                  </tr>
+                  <tr>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1'>3.30pm</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white w3-button w3-white color-hover-1' id="l1t2" onclick="timeClick('l1t2')">9.30am</td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                      <td class='w3-border w3-border-white'></td>
+                  </tr>
+              </table>
+          </div>
+      </div>
+      <div class="w3-half w3-padding-jumbo">
+        <div class="w3-card-2 color-1 w3-round w3-padding-large w3-left-align" style="width:450px; margin-top:60px">
+          <h2 class="w3-xxlarge font-cursive">Overview</h2>
+          <table>
+            <tr><th>Ages</th><td>5 to 7 years old</td></tr>
+            <tr><th>Duration</th><td>Each class is 30 minutes long</td></tr>
+            <tr><th>Fees</th><td>7.50 per class (whole terms only)</td></tr>
+          </table>
+          <br>
+          <h2 class="w3-xxlarge font-cursive">What to Bring</h2>
+          <ul><li>A bottle of water,</li><li>a healthy snack for after class,</li><li>and your biggest smiles!</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
-<!-- Contact Section -->
-<div class="w3-container w3-padding-128 w3-light-grey" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-half">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-      <br>
-      <form action="/action_page.php" target="_blank">
-        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-        <p>
-          <button class="w3-button w3-black" type="submit">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </p>
+
+<!-- terms section -->
+<a class="anchor" id="terms"></a>
+<div class="w3-white w3-padding-16">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo w3-centered">Term Times</h2>
+    <div class="w3-row-padding color-text-3 ">
+      <div class="w3-third w3-center">
+        <i class="fa fa-leaf w3-jumbo" aria-hidden="true"></i>
+        <h2 class="w3-xxlarge font-bold">Autumn '17</h2>
+        <table class="w3-padding-jumbo" style="width:100%">
+          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
+          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
+          <tr><th>Term Ends</th><td>17th December</td></tr>
+        </table>
+      </div>
+      <div class="w3-third">
+        <i class="material-icons w3-jumbo">local_florist</i>
+        <h2 class="w3-xxlarge font-bold">Spring '18</h2>
+        <table class="w3-padding-jumbo" style="width:100%">
+          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
+          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
+          <tr><th>Term Ends</th><td>17th December</td></tr>
+        </table>
+      </div>
+      <div class="w3-third">
+        <i class="material-icons w3-jumbo">wb_sunny</i>
+        <h2 class="w3-xxlarge font-bold">Summer '18</h2>
+        <table class="w3-padding-jumbo" style="width:100%">
+          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
+          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
+          <tr><th>Term Ends</th><td>17th December</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- locations section -->
+<a class="anchor" id="locations"></a>
+<div class="color-1 w3-padding-16">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo">Locations</h2>
+    <div class="strip-centre">
+      <div class="w3-bar color-3 font-bold w3-xxlarge w3-center">
+        <button class="w3-bar-item w3-button tablink color-2" onclick="openVenue(event,'southampton')">Southampton</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openVenue(event,'woolston')">Woolston</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openVenue(event,'west-end')">West End</button>
+      </div>
+
+      <div id="southampton" class="venue w3-container" style="display:block">
+        <p>This is some information about Southampton</p>
+        <iframe class="w3-card-2 w3-round"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80492.08317159954!2d-1.4705326375848073!3d50.9167316503262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48738957be152909%3A0xa78c5a6a4cda71f0!2sSouthampton%2C+UK!5e0!3m2!1sen!2sau!4v1489050301503" width="100%" height="450" frameborder="0" style="border:0; max-width:600px" allowfullscreen></iframe>
+      </div>
+      <div id="woolston" class="venue w3-container" style="display:none">
+        <p>This is some information</p>
+        <iframe class="w3-card-2 w3-round" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10066.285533782455!2d-1.381545810051618!3d50.894642822623815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4874713c690c2b69%3A0x260eae2ecb82df81!2sWoolston%2C+Southampton%2C+UK!5e0!3m2!1sen!2sau!4v1489050678491" width="100%" height="450" frameborder="0" style="border:0; max-width:600px" allowfullscreen></iframe>
+      </div>
+      <div id="west-end" class="venue w3-container" style="display:none">
+        <p>This is some information about West End</p>
+        <iframe class="w3-card-2 w3-round"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.800357822592!2d-1.3340346844202955!3d50.92740997954397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48747223c3863bc3%3A0xa12b75b061a63b9c!2sHilldene+Centre!5e0!3m2!1sen!2sau!4v1489050347143" width="100%" height="450" frameborder="0" style="border:0; max-width:600px" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- contact section -->
+<a class="anchor" id="contact"></a>
+<div class="color-3 w3-padding-16">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo">Contact Us!</h2>
+    <div class="w3-row">
+      <div class="w3-half">
+        <div class="w3-pading-jumbo w3-right w3-left-align">
+          <h3>Address</h3>
+          <p><i class="fa fa-map-marker w3-text-white w3-xlarge"></i>  Southampton, UK</p>
+          <p><i class="fa fa-phone w3-text-white w3-xlarge"></i>  <a href="tel:07123456789">07123456789</a></p>
+          <p><i class="fa fa-envelope-o w3-text-white w3-xlarge"></i>  <a href="mailto:hello@danceoutloud.co">hello@danceoutloud.co</a></p>
+        </div>
+      </div>
+      <div class="w3-half">
+      <form id="contact-form" class="w3-container w3-padding-16" 
+            action="https://docs.google.com/forms/d/e/1FAIpQLSe2XsH5_aY_2S2BhLZ4G_Hb5nGQqFdFY_Fh87Q3WQNvwSF9hA/formResponse" 
+            target="hidden_iframe" method="POST" onsubmit="submitted=true">
+        <div class="w3-group">      
+            <label class="w3-label">Name</label>
+            <input class="w3-input" type="text" name="entry.2005620554" required>
+        </div>
+        <div class="w3-group">      
+            <label class="w3-label">Email</label>
+            <input class="w3-input" type="text" name="entry.1045781291" required>
+        </div>
+        <div class="w3-group">      
+            <label class="w3-label">Message</label>
+            <input class="w3-input" type="text" name="entry.839337160" required>
+        </div>
+        <button id="send" type="submit" class="w3-button w3-right w3-theme">Send</button>
       </form>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {contactSubmitted()}"></iframe>
     </div>
-    <div class="w3-half">
-      <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-greyscale-max" style="width:100%;height:510px;"></div>
     </div>
   </div>
 </div>
+
+<script>
+function openClass(className) {
+    var i;
+    var x = document.getElementsByClassName("class");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(className).style.display = "block"; 
+}
+
+function openVenue(evt, venueName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("venue");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" color-2", "");
+  }
+  document.getElementById(venueName).style.display = "block";
+  evt.currentTarget.className += " color-2";
+}
+</script>
+
+
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
@@ -200,31 +660,8 @@ body, html {
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
  
-<!-- Add Google Maps -->
+
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(50.9097, -1.4044);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
 
 // Toggle between showing and hiding the sidenav when clicking the menu icon
@@ -243,11 +680,6 @@ function w3_close() {
     mySidenav.style.display = "none";
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
 </body>
 </html>
