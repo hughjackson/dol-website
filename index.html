@@ -26,9 +26,13 @@ body, html {
 .bgimg-1 {
     background-size: cover;
     background-position:center;
-    background-attachment: fixed;
     background-image: url("https://static.wixstatic.com/media/b80d9e_9693ef49f1bd4b43b9bcf6d73e64f180~mv2.jpg/v1/fill/w_1286,h_382,al_c,q_85,usm_0.66_1.00_0.01/b80d9e_9693ef49f1bd4b43b9bcf6d73e64f180~mv2.webp");
-    min-height: 100%;
+    min-height: 387px;
+}
+.trialpass-img {
+    background-size: cover;
+    background-position:center;
+    background-image: url("https://static.wixstatic.com/media/b80d9e_27fbcf98bf5440cca05e4a900dcbab3e~mv2.jpg/v1/fill/w_280,h_208,al_c,q_80,usm_0.66_1.00_0.01/b80d9e_27fbcf98bf5440cca05e4a900dcbab3e~mv2.webp");
 }
 .bgimg-class-1, .bgimg-class-2, .bgimg-class-3 {
     background-size: cover;
@@ -60,15 +64,18 @@ body, html {
 .class{display:none}
 
 .w3-hover-opacity-none:hover {opacity: 1!important}
+.font-logo {font-family:amatic sc, cursive; line-height:60%; font-size:35px}
 .font-bold {font-family:playlist-caps,fantasy; line-height:110%}
 .font-chunky {font-family:raleway,fantasy; line-height:110%}
 .font-cursive {font-family:playlist-script,fantasy; line-height:110%}
 .color-1, .color-hover-1:hover {background-color:#ffa8be!important; color:#ffffff!important;}
-.color-text-1, .color-text-hover-1:hover {color:#ffa8be!important;}
+.color-text-1, .color-text-hover-1:hover {color:#ff8abd!important;}
 .color-2, .color-hover-2:hover {background-color:#9ec6df !important; color:#000000!important;}
-.color-text-2, .color-text-hover-2:hover {color:#9ec6df !important;}
+.color-text-2, .color-text-hover-2:hover {color:#9ec6d9 !important;}
 .color-3, .color-hover-3:hover {background-color:#757575!important; color:#ffffff!important;}
 .color-text-3, .color-text-hover-3:hover {color:#757575!important;}
+.color-text-4, .color-text-hover-4:hover {color:#53555a!important;}
+.color-text-5, .color-text-hover-5:hover {color:#2e2e2e!important;}
 </style>
 
 
@@ -79,23 +86,33 @@ body, html {
 <div class="w3-top w3-card-2 w3-white">
   <div class="w3-bar strip-centre w3-display-container" id="myNavbar">
     <div >
-      <a href="#home" class="w3-bar-item w3-wide">
-        <img src='https://static.wixstatic.com/media/b80d9e_3f72e2f92dae450dbd713c2f8fa0bbb3~mv2.png/v1/crop/x_0,y_12,w_533,h_162/fill/w_261,h_79,al_c,usm_0.66_1.00_0.01/b80d9e_3f72e2f92dae450dbd713c2f8fa0bbb3~mv2.png' style='height:100%'/>
-      </a>
-      <!-- Right-sided navbar links -->
-      <div class="w3-display-right w3-hide-small">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#classes" class="w3-bar-item w3-button">Classes</a>
-        <a href="#terms" class="w3-bar-item w3-button">Term Times</a>
-        <a href="#locations" class="w3-bar-item w3-button">Locations</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-      </div>
-      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  <a href="#home" class="w3-mobile w3-bar-item w3-wide" style='margin-bottom:-0px'>
+    <img src='images/crown-circle-pink.png' style='height:100px'/>
+  </a>
+  <div class="w3-bar-item font-logo color-text-5 w3-center w3-margin-top">
+    <b>
+    Dance Out 
+    <span class='color-text-1'>Loud</span>
+    </b>
+    <br />
+    <span class='font-cursive' style='font-size:14px'>Move. Play. Learn.</span>
+  </div>
 
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
-      </a>
+
+  <!-- Right-sided navbar links -->
+  <div class="w3-display-right w3-hide-small color-text-3">
+    <a href="index" class="w3-bar-item w3-button">Home</a>
+    <a href="about" class="w3-bar-item w3-button">About</a>
+    <a href="classes" class="w3-bar-item w3-button">Classes</a>
+    <a href="terms" class="w3-bar-item w3-button">Term Times</a>
+    <a href="locations" class="w3-bar-item w3-button">Locations</a>
+    <a href="contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+  <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <i class="fa fa-bars w3-padding-right w3-padding-left"></i>
+  </a>
     </div>
   </div>
 </div>
@@ -111,32 +128,189 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<a class="anchor" id="home"></a>
-<header class="bgimg-1 w3-display-container w3-grayscale-min">
-  <div class="w3-display-middle">
-    <div class="w3-padding-jumbo w3-text-white w3-center" style="height:80%">
-      <span class="w3-jumbo w3-text-black font-bold ">
-        <span class="w3-text-black">Experience</span><br>
-        <span class="color-text-3">the</span>
-        <span class="color-text-1">Magic...</span>
-      </span><br>
-      <span class=""><a href="#classes" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Join us for a class</a></span>
+<header class="bgimg-1 w3-display-container">
+  <div class="w3-display-right" style='margin-right:200px'>
+    <div class="w3-padding-large w3-text-white w3-center" style="height:80%">
+      <div class="w3-left-align">
+        <span class="w3-jumbo font-bold" style="letter-spacing: 0.05em">
+          <span class="color-text-4">Experience</span><br>
+          <span class="color-text-2">the</span>
+          <span class="color-text-1">Magic...</span>
+        </span><br>
+      </div>
     </div> 
   </div>
-  <div class="w3-display-bottomleft w3-padding-xxlarge w3-text-grey w3-large">
-    <a href="#" class="w3-hover-text-white"><i class="fa fa-facebook-official"></i></a>
-    <a href="#" class="w3-hover-text-white"><i class="fa fa-flickr"></i></a>
-    <a href="#" class="w3-hover-text-white"><i class="fa fa-instagram"></i></a>
-    <a href="#" class="w3-hover-text-white"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="w3-hover-text-white"><i class="fa fa-linkedin"></i></a>
-  </div>
-  
-  <a class="w3-container w3-display-bottommiddle w3-text-grey w3-xxlarge w3-center" 
-      style="text-decoration: none; margin-bottom:100px" href="#about">V</a>
 </header>
 
+<div class='color-1 w3-row w3-padding-large'>
+  <!-- text -->
+  <div class='w3-col m8 s12 w3-center color-text-4' style='font-size:15px'>
+    <span class='w3-text-white font-cursive' style='font-size:52px'>
+    Look... A special offer!
+    </span>
+    <p>HELLO, SOUTHAMPTON! Help us celebrate our grand, glittery opening!</p>
+    <p>For a very limited time, we are offering a special gift to any little one who loves to dance:</p>
+    <p><b>An UNLIMITED 14 day trial pass at no cost to you!</b></p>
+    <p>Watch your child dance, sing and grow in our beautiful classes with the use of gorgeous props set to music that inspires the imagination</p>
+    <p>Quick! We only have 50 passes to give away. Expires 20th June 2017</p>
+  </div>
+
+  <!-- pass -->
+  <div class='w3-rest w3-padding-large'>
+    <a href='./free-trial-landing'>
+      <div class='w3-display-container trialpass-img w3-card-4 w3-round' style='height:208px; width:280px'>
+        <div class='w3-display-middle w3-center w3-margin w3-white w3-opacity w3-xlarge' style='margin:0px!important'>
+            <b>GET YOUR FREE 14 TRIAL PASS HERE</b>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<!-- Classes -->
+<div class="color-3 w3-padding-16">
+  <div class="w3-row-padding">
+    <div class="w3-third w3-padding-8">
+      <div class="bgimg-class-1 w3-card-2 w3-round-large w3-center">
+        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
+          <span class="w3-xxlarge font-chunky">
+            Dance With Me<br>
+            1.5 - 3yrs
+          </span>
+          <p class="w3-padding-large">A fun, interactive class for our youngest dancers</p>
+          <a href="#class" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-padding-8">
+      <div class="bgimg-class-2 w3-card-2 w3-round-large w3-center">
+        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
+          <span class="w3-xxlarge font-chunky">
+            Fairy Ballet<br>
+            3 - 5yrs
+          </span>
+          <p class="w3-padding-large">Fairies fly and create wonderful dance magic!</p>
+          <a href="#class" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-padding-8">
+      <div class="bgimg-class-3 w3-card-2 w3-round-large w3-center">
+        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
+          <span class="w3-xxlarge font-chunky">
+            Tutu Ballet<br>
+            5 - 7yrs
+          </span>
+          <p class="w3-padding-large">Leap and twirl with abandon like a real ballerina!</p>
+          <a href="#class" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='w3-row-padding' style='margin-left:100px'>
+  <div class='w3-half w3-text-black'>
+    <div class='w3-center w3-padding-xxlarge'>
+    <span class='color-text-2' style='font-size:40px'>
+      <span class='font-bold' style='font-size:50px'>More</span> than a <span class='font-cursive' style='font-size:52px'>dance class</span>
+    </span>
+
+    <p>Dance Out Loud will take your child on a special journey of dance magic as they grow in <b>confidence</b>, <b>creativity</b> and <b>joy</b> with each class. </p>
+    <p>Our programmes were specially designed for growing bodies and minds by former medical doctor and real-life ballerina Haylee Solomons using the stages of child development. This unique <b>recipe</b> ensures our children blossom as <b>resilient humans</b>, and as <b>beautiful dancers!</b></p>
+    <p>Join us as we embark on our wonderful adventures together!</p>
+    </div>
+  </div>
+  <div class='w3-half'>
+    <img src='https://static.wixstatic.com/media/b80d9e_9175ab193821418ea152a39d5e5675dc~mv2.jpg/v1/fill/w_443,h_448,al_c,q_80,usm_0.66_1.00_0.01/b80d9e_9175ab193821418ea152a39d5e5675dc~mv2.webp' style='height:448px' />
+  </div>
+ 
+</div>
+
+<img src='https://static.wixstatic.com/media/b80d9e_e63f9e1a869c4a69bcc3d894b8f9999a~mv2.jpg/v1/fill/w_1295,h_427,al_c,q_85,usm_0.66_1.00_0.01/b80d9e_e63f9e1a869c4a69bcc3d894b8f9999a~mv2.webp' style='width:100%' />
+
+
+<!-- note from miss haylee section -->
+<div class="w3-display-container">
+  <div class="w3-center w3-padding-xxlarge w3-border" style='margin-left:20%; margin-right:20%'>
+        <img class="w3-margin w3-circle" src="https://static.wixstatic.com/media/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.jpg/v1/fill/w_189,h_195,al_c,q_80,usm_0.66_1.00_0.01/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.webp"></img>
+        <h2 class='color-text-1 font-bold w3-jumbo w3-padding-xxlarge'>A note from Miss Haylee</h2>
+        <div class="w3-padding-jumbo">
+          <p>Welcome!</p>
+          <p>Dance Out Loud is a precious boutique dance school just for our youngest dancers that I created after years of hard work studying and teaching dance to both children and adults. I wanted to create a magical, creative place where little ones could experience the joy of twirling and jumping across the floor, just as I remember from when I was a child.</p>
+          <p>My own mother tears up thinking back to the days when her little dancer used to practice her wobbly pique steps down the hallway, and she still owns the very first pair of tiny ballet shoes that I refused to take off all those years ago (I even slept in them!)</p>
+          <p>I hope Dance Out Loud creates beautiful memories for you and your children.</p>
+        </div>
+  </div>
+</div>
+
+
+<!-- free trial 2 -->
+<div class='color-3 w3-row w3-padding-large'>
+  <!-- text -->
+  <div class='w3-col m8 s12 w3-center w3-text-white w3-padding' style='font-size:52px'>
+    <span class='font-bold'>Watch your child</span> <span class='font-cursive'>sparkle</span> as<br> they take their <span class='font-bold'>first ballet<br> steps</span> with us.
+  </div>
+
+  <!-- pass -->
+  <div class='w3-rest w3-padding-large'>
+    <a href='./free-trial-landing'>
+      <div class='w3-display-container trialpass-img w3-card-4 w3-round' style='height:208px; width:280px'>
+        <div class='w3-display-middle w3-center w3-margin w3-white w3-opacity w3-xlarge' style='margin:0px!important'>
+            <b>GET YOUR FREE 14 TRIAL PASS HERE</b>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+
+<div class='w3-white' style='height:800px'>
+</div>
+
+
+
+
+<!-- terms section -->
+<a class="anchor" id="terms"></a>
+<div class="w3-white w3-padding-16">
+  <div class="w3-center">
+    <h2 class="font-cursive w3-jumbo w3-padding-jumbo w3-centered">Term Times</h2>
+    <div class="w3-row-padding color-text-3 ">
+      <div class="w3-third w3-center">
+        <i class="fa fa-leaf w3-jumbo" aria-hidden="true"></i>
+        <h2 class="w3-xxlarge font-bold">Autumn '17</h2>
+        <table class="w3-padding-jumbo" style="width:100%">
+          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
+          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
+          <tr><th>Term Ends</th><td>17th December</td></tr>
+        </table>
+      </div>
+      <div class="w3-third">
+        <i class="material-icons w3-jumbo">local_florist</i>
+        <h2 class="w3-xxlarge font-bold">Spring '18</h2>
+        <table class="w3-padding-jumbo" style="width:100%">
+          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
+          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
+          <tr><th>Term Ends</th><td>17th December</td></tr>
+        </table>
+      </div>
+      <div class="w3-third">
+        <i class="material-icons w3-jumbo">wb_sunny</i>
+        <h2 class="w3-xxlarge font-bold">Summer '18</h2>
+        <table class="w3-padding-jumbo" style="width:100%">
+          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
+          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
+          <tr><th>Term Ends</th><td>17th December</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- about section -->
-<a class="anchor" id="about" style="top:-190px"></a>
 <div class="w3-display-container" style="margin-top:-85px">
   <img class="w3-circle w3-display-topmiddle" src="https://static.wixstatic.com/media/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.jpg/v1/fill/w_189,h_195,al_c,q_80,usm_0.66_1.00_0.01/b80d9e_d83d87513f5e4ebdae0286ad54647f81~mv2.webp"></img>
   <div style="padding-top:85px"></div>
@@ -163,54 +337,6 @@ body, html {
 
 <!-- classes section -->
 <a class="anchor" id="classes"></a>
-<div class="color-3 w3-padding-16">
-  <div class="w3-center">
-    <h2 class="font-cursive w3-jumbo w3-padding-jumbo">Classes</h2>
-    <div class="strip-centre-small">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet urna at libero consequat, ac porttitor dui venenatis. Donec faucibus quam et purus facilisis imperdiet a a velit. Maecenas eget erat et elit luctus auctor. Phasellus tincidunt ex id tellus egestas gravida. Suspendisse rutrum ultrices pulvinar. Aenean ipsum odio, suscipit ut pharetra id, volutpat quis mi.</p>
-    </div>
-  </div>
-  
-  <a class="anchor" id="class"></a>
-  <div class="w3-row-padding">
-    <div class="w3-third w3-padding-8">
-      <div class="bgimg-class-1 w3-card-2 w3-round-large w3-center">
-        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
-          <span class="w3-xlarge font-chunky">
-            Dance With Me<br>
-            1.5 - 3yrs
-          </span>
-          <p class="w3-padding-large">A fun, interactive class for our youngest dancers</p>
-          <a href="#class" onClick="openClass('class1')" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="w3-third w3-padding-8">
-      <div class="bgimg-class-2 w3-card-2 w3-round-large w3-center">
-        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
-          <span class="w3-xlarge font-chunky">
-            Fairy Ballet<br>
-            3 - 5yrs
-          </span>
-          <p class="w3-padding-large">Fairies fly and create wonderful dance magic!</p>
-          <a href="#class" onClick="openClass('class2')" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="w3-third w3-padding-8">
-      <div class="bgimg-class-3 w3-card-2 w3-round-large w3-center">
-        <div class="w3-round color-hover-1 w3-hover-opacity-none w3-white w3-opacity w3-center w3-padding-jumbo w3-round-large" style="height:100%">
-          <span class="w3-xlarge font-chunky">
-            Tutu Ballet<br>
-            5 - 7yrs
-          </span>
-          <p class="w3-padding-large">Leap and twirl with abandon like a real ballerina!</p>
-          <a href="#class" onClick="openClass('class3')" class="w3-button w3-border w3-dark-grey w3-hover-white w3-padding-large w3-margin-top">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- individual class section -->
 <div class="color-3 w3-padding-16 class" id="class1">
@@ -515,42 +641,6 @@ body, html {
 
 
 
-<!-- terms section -->
-<a class="anchor" id="terms"></a>
-<div class="w3-white w3-padding-16">
-  <div class="w3-center">
-    <h2 class="font-cursive w3-jumbo w3-padding-jumbo w3-centered">Term Times</h2>
-    <div class="w3-row-padding color-text-3 ">
-      <div class="w3-third w3-center">
-        <i class="fa fa-leaf w3-jumbo" aria-hidden="true"></i>
-        <h2 class="w3-xxlarge font-bold">Autumn '17</h2>
-        <table class="w3-padding-jumbo" style="width:100%">
-          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
-          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
-          <tr><th>Term Ends</th><td>17th December</td></tr>
-        </table>
-      </div>
-      <div class="w3-third">
-        <i class="material-icons w3-jumbo">local_florist</i>
-        <h2 class="w3-xxlarge font-bold">Spring '18</h2>
-        <table class="w3-padding-jumbo" style="width:100%">
-          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
-          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
-          <tr><th>Term Ends</th><td>17th December</td></tr>
-        </table>
-      </div>
-      <div class="w3-third">
-        <i class="material-icons w3-jumbo">wb_sunny</i>
-        <h2 class="w3-xxlarge font-bold">Summer '18</h2>
-        <table class="w3-padding-jumbo" style="width:100%">
-          <tr><th>Term Begins</th><td>11th Septempber</td></tr>
-          <tr><th>Holidays</th><td>23 Oct - 29 Oct</td></tr>
-          <tr><th>Term Ends</th><td>17th December</td></tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <!-- locations section -->
